@@ -1,9 +1,9 @@
-# CAS documentation
+# Plant Measurements documentation
 
-Grower documentation for the Source **Crop Assessment System**, published at
+Grower documentation for the Source **Plant Measurements**, published at
 <https://source-ag.github.io/cas-documentation/>.
 
-It explains what CAS is, how the app is used screen by screen, the measurement
+It explains what Plant Measurements is, how the app is used screen by screen, the measurement
 protocol, and the glossary — in English, Dutch and French.
 
 ## This repository holds output, not source
