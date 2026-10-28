@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Crop Assessment System — Documentation</title>
+<title data-i18n="page.title">Plant Measurements — Documentation</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@300;500&display=swap');
 
@@ -44,8 +44,9 @@ nav.topnav .brand {
   color: var(--off-white);
   font-family: var(--font-headline); font-weight: 500; font-size: 18px;
   margin-right: 24px; letter-spacing: 0.02em;
+  white-space: nowrap; flex-shrink: 0;
 }
-nav.topnav .brand span { color: var(--seagreen); }
+nav.topnav .brand > span:first-child { color: var(--seagreen); }
 nav.topnav a {
   color: var(--off-white); text-decoration: none;
   font-size: 13px; font-weight: 500;
@@ -289,7 +290,7 @@ footer .f-date { color: rgba(246,249,243,.45); }
 <body>
 
 <nav class="topnav" id="topnav">
-  <div class="brand">Source <span>/</span> CAS</div>
+  <div class="brand">Source <span>/</span> <span data-i18n="hero.eyebrow">Plant Measurements</span></div>
   <a href="#how" class="navlink active" data-i18n="nav.how">How it works</a>
   <a href="#app" class="navlink" data-i18n="nav.app">Using the app</a>
   <a href="#help" class="navlink" data-i18n="nav.help">Settings &amp; help</a>
@@ -305,7 +306,7 @@ footer .f-date { color: rgba(246,249,243,.45); }
 
 <header class="hero">
   <div class="hero-inner">
-    <div class="eyebrow" data-i18n="hero.eyebrow">Crop Assessment System</div>
+    <div class="eyebrow" data-i18n="hero.eyebrow">Plant Measurements</div>
     <h1 data-i18n="hero.h1">Small observations.<br>A complete picture of the crop.</h1>
     <p class="lead" data-i18n="hero.lead">Lead paragraph.</p>
     <div class="rule-chips">
@@ -321,7 +322,7 @@ footer .f-date { color: rgba(246,249,243,.45); }
 <!-- ============ HOW IT WORKS ============ -->
 <section class="doc" id="how">
   <div class="kicker" data-i18n="how.kicker">01 · Concepts</div>
-  <h2 data-i18n="how.h2">How CAS works</h2>
+  <h2 data-i18n="how.h2">How Plant Measurements works</h2>
   <p class="intro" data-i18n="how.intro">Intro.</p>
 
   <h3 class="sub" data-i18n="how.gh.h">The greenhouse</h3>
@@ -763,7 +764,7 @@ footer .f-date { color: rgba(246,249,243,.45); }
 <footer>
   <div class="footer-inner">
     <div>
-      <div class="f-brand">Source / Crop Assessment System</div>
+      <div class="f-brand">Source / <span data-i18n="hero.eyebrow">Plant Measurements</span></div>
       <div data-i18n="footer.tagline">User documentation</div>
     </div>
     <div class="f-date"><span data-i18n="footer.updated">Last updated</span> 2026-09-21</div>
@@ -787,11 +788,11 @@ const I18N = {
     "app.f2.appHome.alt": "Source home screen with a greeting and a Plant measurements card showing 3 stems left across 1 path.",
     "app.f2.appHome.h": "Source home",
     "app.f2.appHome.n": "Start here",
-    "app.f2.appHome.p": "The day's greeting, then a <b>Plant measurements</b> card: how many stems are left, task beads by type, and how many paths they sit across. Tap the card to enter CAS. Ask Source sits at the bottom for questions about the crop.",
-    "app.f2.casHome.alt": "CAS home showing 6 of 9 stems, coverage, and cards for Path 1 and Path 2.",
+    "app.f2.appHome.p": "The day's greeting, then a <b>Plant measurements</b> card: how many stems are left, task beads by type, and how many paths they sit across. Tap the card to enter Plant Measurements. Ask Source sits at the bottom for questions about the crop.",
+    "app.f2.casHome.alt": "Plant Measurements home showing 6 of 9 stems, coverage, and cards for Path 1 and Path 2.",
     "app.f2.casHome.h": "Paths",
-    "app.f2.casHome.p": "Inside CAS: the hero counter (6 / 9 stems) and coverage, then one card per path with beads for its pending tasks. Finished paths move down to Done.",
-    "app.f2.desc": "The app opens on your Source home; tapping the Plant measurements card enters CAS. From there it zooms in: paths, then one path, then one stem. The scan button is always one tap away, and scanning a QR opens the right task from anywhere.",
+    "app.f2.casHome.p": "Inside Plant Measurements: the hero counter (6 / 9 stems) and coverage, then one card per path with beads for its pending tasks. Finished paths move down to Done.",
+    "app.f2.desc": "The app opens on your Source home; tapping the Plant measurements card enters Plant Measurements. From there it zooms in: paths, then one path, then one stem. The scan button is always one tap away, and scanning a QR opens the right task from anywhere.",
     "app.f2.h": "Getting around",
     "app.f2.path.alt": "Path screen listing every stem on the path.",
     "app.f2.path.h": "Path screen",
@@ -889,10 +890,10 @@ const I18N = {
     "app.tab5": "Count setting cluster",
     "app.tab6": "Count colouring cluster",
     "app.tab7": "After the session",
-    "footer.tagline": "User documentation for the Crop Assessment System",
+    "footer.tagline": "User documentation for Plant Measurements",
     "footer.updated": "Last updated",
     "gloss.facts.h": "The essentials",
-    "gloss.facts.li1": "<b>CAS is the Crop Assessment System</b>, the measurement part of the Source app.",
+    "gloss.facts.li1": "<b>Plant Measurements</b> is the measurement part of the Source app.",
     "gloss.facts.li2": "The app is <b>offline-first</b>: entries are stored on the device and sync in the background.",
     "gloss.facts.li3": "<b>One QR code is one cluster</b>, for one lifecycle of roughly eight weeks. Measurement stems carry their own QR too.",
     "gloss.facts.li4": "<b>The task follows the scan</b>: the QR that is scanned determines which step opens. Growers never pick a task type.",
@@ -920,15 +921,15 @@ const I18N = {
     "gloss.t14.k": "Quality issues",
     "gloss.t14.v": "What is visibly wrong on a cluster: poorly set fruit, blossom end rot, cracked fruit, or something else.",
     "gloss.t15.k": "Coverage",
-    "gloss.t15.v": "The share of a session's due work that was completed; the success metric of CAS.",
+    "gloss.t15.v": "The share of a session's due work that was completed; the success metric of Plant Measurements.",
     "gloss.t16.k": "Session",
     "gloss.t16.v": "One measurement day's work, closing with the session summary.",
     "gloss.t17.k": "Fruit-set rate",
-    "gloss.t17.v": "How many new fruits set per unit of time; the core figure CAS feeds to Harvest Forecast.",
+    "gloss.t17.v": "How many new fruits set per unit of time; the core figure Plant Measurements feeds to Harvest Forecast.",
     "gloss.t18.k": "Quiescent",
     "gloss.t18.v": "The stretch of roughly three weeks between fully set and colouring, in which a cluster generates no tasks.",
     "gloss.t19.k": "Harvest Forecast",
-    "gloss.t19.v": "The Source forecast of how much will be harvested and when; the main consumer of CAS data.",
+    "gloss.t19.v": "The Source forecast of how much will be harvested and when; the main consumer of Plant Measurements data.",
     "gloss.t2.k": "Path",
     "gloss.t2.v": "The walking aisle between two plant rows, and the primary unit of navigation.",
     "gloss.t4.k": "Stem",
@@ -940,7 +941,7 @@ const I18N = {
     "gloss.t7.k": "Cluster",
     "gloss.t7.v": "One bunch of fruit on a stem: the unit a QR tags and every observation describes.",
     "gloss.t8.k": "Measurement stem",
-    "gloss.t8.v": "A stem registered in CAS as part of the sample of at least 40.",
+    "gloss.t8.v": "A stem registered in Plant Measurements as part of the sample of at least 40.",
     "gloss.t9.k": "Chain-scan",
     "gloss.t9.v": "Resolving a new cluster's stem by scanning a QR already on that stem.",
     "gloss.terms.h": "Terms",
@@ -959,7 +960,7 @@ const I18N = {
     "help.correct.li2": "<b>Wrong count saved</b> — contact your crop advisor or Source support. They can submit a correction that replaces the earlier observation.",
     "help.correct.li3": "<b>Cluster linked to the wrong stem</b> — report the error to your crop advisor. The link can be corrected by support, but the sooner it is caught the better.",
     "help.correct.note": "Every observation you make is stored in the event history, including corrections. Nothing is lost, even when a value is later corrected.",
-    "help.correct.p1": "Observations in CAS are recorded as they happen. <b>There is no way to edit a previous observation directly from the app.</b> The numbers you enter are submitted when you save, and changes to past sessions require support.",
+    "help.correct.p1": "Observations in Plant Measurements are recorded as they happen. <b>There is no way to edit a previous observation directly from the app.</b> The numbers you enter are submitted when you save, and changes to past sessions require support.",
     "help.correct.p2": "<b>Before saving</b>, review your counts carefully. The running totals and change indicators on the count screens are there to help you spot implausible entries.",
     "help.h2": "Settings and getting help",
     "help.intro": "Not everything in the app is a measurement. The Settings tab carries the app's own setup and a refresher on how measuring works; on Home, Ask Source takes questions about the crop.",
@@ -987,9 +988,9 @@ const I18N = {
     "hero.chip1": "<b>Governing rule</b> — complete every task the app generates",
     "hero.chip2": "<b>Offline-first</b> — a measurement never waits for the network",
     "hero.chip3": "<b>One QR</b> = one cluster = one lifecycle",
-    "hero.eyebrow": "Crop Assessment System",
+    "hero.eyebrow": "Plant Measurements",
     "hero.h1": "Small observations.<br>A complete picture of the crop.",
-    "hero.lead": "CAS turns short, targeted observations on a sample of measurement plants into a picture of the whole greenhouse: how the crop is setting, ripening and yielding. Every fact is recorded with the moment it was seen.",
+    "hero.lead": "Plant Measurements turns short, targeted observations on a sample of measurement plants into a picture of the whole greenhouse: how the crop is setting, ripening and yielding. Every fact is recorded with the moment it was seen.",
     "how.data.formula": "estimated metric = observed rate × population volume",
     "how.data.h": "Where the data goes",
     "how.data.p1": "Every observation, whether a count, a photo or a lifecycle event, feeds Source's forecasting models, most importantly <b>Harvest Forecast</b>. Well-distributed, correctly attributed observations are what let a sample of stems stand in for the whole greenhouse:",
@@ -1005,7 +1006,7 @@ const I18N = {
     "how.gh.l5.n": "Cluster",
     "how.gh.p1": "A high-tech greenhouse is organised spatially. The grower thinks in places (<i>“I'm on path 250”</i>), and the app mirrors this navigation logic rather than presenting a flat list of jobs.",
     "how.gh.p2": "A <b>QR code is attached to each cluster</b> as soon as it appears, and stays with it for its whole life, from first fruit set through to harvest. Scanning that QR is how the app knows which cluster you are looking at, and which step comes next.",
-    "how.h2": "How CAS works",
+    "how.h2": "How Plant Measurements works",
     "how.id.h": "How a cluster finds its stem",
     "how.id.li1": "<b>Chain-scan, almost always.</b> When registering a new cluster, the grower scans a QR that is already on the same stem. Scanning the nearest cluster just below the new one avoids linking to a neighbouring plant by mistake.",
     "how.id.li2": "<b>The stem's own QR, for a cold start.</b> Every measurement stem carries a QR. When there is no cluster QR to chain from (a new stem, a freshly kept side shoot, early in the season), that is what gets scanned.",
@@ -1051,7 +1052,7 @@ const I18N = {
     "how.reg.side.s2": "<b>Link main stem</b> — scan the QR of the main stem, or of any cluster already hanging on it, so the two are connected.",
     "how.reg.side.s3": "<b>Set location</b> — the label is derived from the main stem, so a side shoot is always recognisable as belonging to it.",
     "how.reg.when": "Stems are registered at the start of the season, whenever the system asks for extra measurement plants, and in the weeks when side shoots are kept to raise plant density.",
-    "how.reg.why": "Everything CAS reports about a greenhouse is estimated from a sample of measurement stems. Registering them well, evenly spread and correctly located, is what every later number rests on.",
+    "how.reg.why": "Everything Plant Measurements reports about a greenhouse is estimated from a sample of measurement stems. Registering them well, evenly spread and correctly located, is what every later number rests on.",
     "how.tasks.h": "Tasks and sessions",
     "how.tasks.p1": "Tasks are generated per cultivation. How many arrive on a given day depends on the cultivation, its cadence, and what the crop is doing. By the end of the day the work is either done or it rolls off.",
     "how.tasks.p2": "The grower opens the app, sees what is waiting (<b>6 of 9 stems</b>, for example), then walks the greenhouse and scans. Progress is shown as <b>coverage</b>: how many stems with due work were actually visited.",
@@ -1061,6 +1062,7 @@ const I18N = {
     "nav.help": "Settings &amp; help",
     "nav.how": "How it works",
     "nav.protocol": "Protocol",
+    "page.title": "Plant Measurements — Documentation",
     "proto.cad.h": "Cadence",
     "proto.cad.li1": "<b>Two sessions per week</b> is the default, typically Monday and Thursday; some cultivations run three.",
     "proto.cad.li2": "Tasks are generated per measurement day.",
@@ -1116,11 +1118,11 @@ const I18N = {
     "app.f2.appHome.alt": "Source-homescherm met begroeting en de kaart Plantmetingen met 3 stengels over, verspreid over 1 pad.",
     "app.f2.appHome.h": "Source-home",
     "app.f2.appHome.n": "Begin hier",
-    "app.f2.appHome.p": "De begroeting van de dag, met daaronder de kaart <b>Plantmetingen</b>: hoeveel stengels er nog open staan, de taakbolletjes per soort, en over hoeveel paden ze verspreid zijn. Tik op de kaart om CAS te openen. Onderaan staat Ask Source voor vragen over het gewas.",
-    "app.f2.casHome.alt": "CAS-home met 6 van 9 stengels, de dekking, en kaarten voor pad 1 en pad 2.",
+    "app.f2.appHome.p": "De begroeting van de dag, met daaronder de kaart <b>Plantmetingen</b>: hoeveel stengels er nog open staan, de taakbolletjes per soort, en over hoeveel paden ze verspreid zijn. Tik op de kaart om Plantmetingen te openen. Onderaan staat Ask Source voor vragen over het gewas.",
+    "app.f2.casHome.alt": "Plantmetingen-home met 6 van 9 stengels, de dekking, en kaarten voor pad 1 en pad 2.",
     "app.f2.casHome.h": "Paden",
-    "app.f2.casHome.p": "In CAS: de grote teller (6 / 9 stengels) en de dekking, daaronder één kaart per pad met bolletjes voor de openstaande taken. Afgeronde paden schuiven naar Klaar.",
-    "app.f2.desc": "De app opent op je Source-home; door op de kaart Plantmetingen te tikken ga je naar CAS. Daarna zoomt de app in: paden, dan één pad, dan één stengel. De scanknop is altijd één tik weg, en het scannen van een QR opent van waar dan ook de juiste taak.",
+    "app.f2.casHome.p": "In Plantmetingen: de grote teller (6 / 9 stengels) en de dekking, daaronder één kaart per pad met bolletjes voor de openstaande taken. Afgeronde paden schuiven naar Klaar.",
+    "app.f2.desc": "De app opent op je Source-home; door op de kaart Plantmetingen te tikken ga je naar Plantmetingen. Daarna zoomt de app in: paden, dan één pad, dan één stengel. De scanknop is altijd één tik weg, en het scannen van een QR opent van waar dan ook de juiste taak.",
     "app.f2.h": "Navigeren",
     "app.f2.path.alt": "Padscherm met alle stengels op het pad.",
     "app.f2.path.h": "Padscherm",
@@ -1218,10 +1220,10 @@ const I18N = {
     "app.tab5": "Tel zettende tros",
     "app.tab6": "Tel kleurende tros",
     "app.tab7": "Na de sessie",
-    "footer.tagline": "Gebruikersdocumentatie voor het Crop Assessment System",
+    "footer.tagline": "Gebruikersdocumentatie voor Plantmetingen",
     "footer.updated": "Laatst bijgewerkt",
     "gloss.facts.h": "De kern",
-    "gloss.facts.li1": "<b>CAS staat voor Crop Assessment System</b>, het meetgedeelte van de Source-app.",
+    "gloss.facts.li1": "<b>Plantmetingen</b> is het meetgedeelte van de Source-app.",
     "gloss.facts.li2": "De app is <b>offline-first</b>: invoer wordt op het toestel opgeslagen en synchroniseert op de achtergrond.",
     "gloss.facts.li3": "<b>Eén QR-code is één tros</b>, voor één levensloop van ongeveer acht weken. Meetstengels hebben ook hun eigen QR.",
     "gloss.facts.li4": "<b>De taak volgt de scan</b>: de gescande QR bepaalt welke stap opent. Telers kiezen nooit zelf een soort taak.",
@@ -1249,15 +1251,15 @@ const I18N = {
     "gloss.t14.k": "Kwaliteitsproblemen",
     "gloss.t14.v": "Wat er zichtbaar mis is aan een tros: misgezette vruchten, neusrot, gescheurde vruchten, of iets anders.",
     "gloss.t15.k": "Dekking",
-    "gloss.t15.v": "Het deel van het openstaande werk in een sessie dat is afgerond; de succesmaat van CAS.",
+    "gloss.t15.v": "Het deel van het openstaande werk in een sessie dat is afgerond; de succesmaat van Plantmetingen.",
     "gloss.t16.k": "Sessie",
     "gloss.t16.v": "Het werk van één meetdag, afgesloten met de samenvatting van de sessie.",
     "gloss.t17.k": "Zettingssnelheid",
-    "gloss.t17.v": "Hoeveel nieuwe vruchten er per tijdseenheid zetten; het kerngetal dat CAS aan Harvest Forecast levert.",
+    "gloss.t17.v": "Hoeveel nieuwe vruchten er per tijdseenheid zetten; het kerngetal dat Plantmetingen aan Harvest Forecast levert.",
     "gloss.t18.k": "Rustperiode",
     "gloss.t18.v": "De periode van ongeveer drie weken tussen volledig gezet en kleuren, waarin een tros geen taken oplevert.",
     "gloss.t19.k": "Harvest Forecast",
-    "gloss.t19.v": "De voorspelling van Source over hoeveel er wanneer geoogst wordt; de belangrijkste afnemer van de gegevens uit CAS.",
+    "gloss.t19.v": "De voorspelling van Source over hoeveel er wanneer geoogst wordt; de belangrijkste afnemer van de gegevens uit Plantmetingen.",
     "gloss.t2.k": "Pad",
     "gloss.t2.v": "Het gangpad tussen twee plantrijen, en de belangrijkste eenheid om te navigeren.",
     "gloss.t4.k": "Stengel",
@@ -1269,7 +1271,7 @@ const I18N = {
     "gloss.t7.k": "Tros",
     "gloss.t7.v": "De vruchtdrager waar een QR aan hangt en waar elke observatie over gaat.",
     "gloss.t8.k": "Meetstengel",
-    "gloss.t8.v": "Een stengel die in CAS is geregistreerd als deel van de steekproef van minimaal 40.",
+    "gloss.t8.v": "Een stengel die in Plantmetingen is geregistreerd als deel van de steekproef van minimaal 40.",
     "gloss.t9.k": "Kettingscan",
     "gloss.t9.v": "De stengel van een nieuwe tros bepalen door een QR te scannen die al aan die stengel hangt.",
     "gloss.terms.h": "Begrippen",
@@ -1288,7 +1290,7 @@ const I18N = {
     "help.correct.li2": "<b>Verkeerde telling opgeslagen</b> — neem contact op met je gewasadviseur of Source-support. Zij kunnen een correctie indienen die de eerdere observatie vervangt.",
     "help.correct.li3": "<b>Tros aan de verkeerde stengel gekoppeld</b> — meld de fout aan je gewasadviseur. De koppeling kan door support worden gecorrigeerd, maar hoe eerder dit wordt ontdekt, hoe beter.",
     "help.correct.note": "Elke observatie die je doet wordt opgeslagen in de gebeurtenisgeschiedenis, inclusief correcties. Er gaat niets verloren, zelfs niet als een waarde later wordt gecorrigeerd.",
-    "help.correct.p1": "Observaties in CAS worden vastgelegd op het moment zelf. <b>Het is niet mogelijk om een eerdere observatie rechtstreeks in de app te bewerken.</b> De getallen die je invoert worden bij het opslaan verstuurd, en wijzigingen aan eerdere sessies vereisen ondersteuning.",
+    "help.correct.p1": "Observaties in Plantmetingen worden vastgelegd op het moment zelf. <b>Het is niet mogelijk om een eerdere observatie rechtstreeks in de app te bewerken.</b> De getallen die je invoert worden bij het opslaan verstuurd, en wijzigingen aan eerdere sessies vereisen ondersteuning.",
     "help.correct.p2": "<b>Controleer vóór het opslaan</b> je tellingen zorgvuldig. De lopende totalen en wijzigingsindicatoren op de telschermen helpen je om onwaarschijnlijke invoer te herkennen.",
     "help.h2": "Instellingen en hulp",
     "help.intro": "Niet alles in de app is een meting. Op het tabblad Instellingen vind je hoe de app zelf is ingesteld en een opfrisser over hoe het meten werkt; op Home staat Ask Source klaar voor vragen over het gewas.",
@@ -1316,9 +1318,9 @@ const I18N = {
     "hero.chip1": "<b>Basisregel</b> — volg alle taken die de app genereert",
     "hero.chip2": "<b>Offline-first</b> — een meting wacht nooit op het netwerk",
     "hero.chip3": "<b>Eén QR</b> = één tros = één levensloop",
-    "hero.eyebrow": "Crop Assessment System",
+    "hero.eyebrow": "Plantmetingen",
     "hero.h1": "Kleine observaties.<br>Een compleet beeld van het gewas.",
-    "hero.lead": "CAS zet korte, gerichte observaties aan een steekproef van meetplanten om in een beeld van de hele kas: hoe het gewas zet, rijpt en produceert. Elk gegeven wordt vastgelegd met het moment waarop het is gezien.",
+    "hero.lead": "Plantmetingen zet korte, gerichte observaties aan een steekproef van meetplanten om in een beeld van de hele kas: hoe het gewas zet, rijpt en produceert. Elk gegeven wordt vastgelegd met het moment waarop het is gezien.",
     "how.data.formula": "geschatte waarde = gemeten snelheid × omvang van de populatie",
     "how.data.h": "Waar de gegevens naartoe gaan",
     "how.data.p1": "Elke observatie, of het een telling, een foto of een gebeurtenis in de levensloop is, voedt de voorspelmodellen van Source, in de eerste plaats <b>Harvest Forecast</b>. Goed verdeelde en juist toegewezen observaties maken het mogelijk dat een steekproef van stengels de hele kas vertegenwoordigt:",
@@ -1334,7 +1336,7 @@ const I18N = {
     "how.gh.l5.n": "Tros",
     "how.gh.p1": "Een hightech kas is ruimtelijk ingedeeld. De teler denkt in plaatsen (<i>“ik ben op pad 250”</i>), en de app volgt die navigatielogica, in plaats van een platte lijst met klussen.",
     "how.gh.p2": "Aan <b>elke tros wordt een QR-code gehangen</b> zodra hij verschijnt, en die blijft er zijn hele leven aan zitten, van de eerste zetting tot de oogst. Door die QR te scannen weet de app welke tros je voor je hebt, en welke stap volgt.",
-    "how.h2": "Hoe CAS werkt",
+    "how.h2": "Hoe Plantmetingen werkt",
     "how.id.h": "Hoe een tros zijn stengel vindt",
     "how.id.li1": "<b>De kettingscan, bijna altijd.</b> Bij het registreren van een nieuwe tros scant de teler een QR die al aan dezelfde stengel hangt. Scan de dichtstbijzijnde tros net onder de nieuwe, om te voorkomen dat hij per ongeluk aan de plant ernaast wordt gekoppeld.",
     "how.id.li2": "<b>De eigen QR van de stengel, bij een koude start.</b> Elke meetstengel heeft een eigen QR. Is er nog geen tros-QR om aan te ketenen (een nieuwe stengel, een net aangehouden dief, vroeg in het seizoen), dan wordt die gescand.",
@@ -1380,7 +1382,7 @@ const I18N = {
     "how.reg.side.s2": "<b>Hoofdstengel koppelen</b> — scan de QR van de hoofdstengel, of van een tros die er al aan hangt, zodat de twee verbonden zijn.",
     "how.reg.side.s3": "<b>Locatie instellen</b> — het label wordt afgeleid van de hoofdstengel, zodat een dief altijd herkenbaar bij zijn plant hoort.",
     "how.reg.when": "Stengels worden geregistreerd aan het begin van het seizoen, wanneer het systeem om extra meetplanten vraagt, en in de weken waarin dieven worden aangehouden om de plantdichtheid te verhogen.",
-    "how.reg.why": "Alles wat CAS over een kas rapporteert, wordt geschat op basis van een steekproef van meetstengels. Ze goed registreren, gelijkmatig verdeeld en op de juiste plek, is de basis onder elk later getal.",
+    "how.reg.why": "Alles wat Plantmetingen over een kas rapporteert, wordt geschat op basis van een steekproef van meetstengels. Ze goed registreren, gelijkmatig verdeeld en op de juiste plek, is de basis onder elk later getal.",
     "how.tasks.h": "Taken en sessies",
     "how.tasks.p1": "Taken worden per teelt aangemaakt. Hoeveel er op een dag klaarstaan, hangt af van de teelt, het ritme, en wat het gewas doet. Aan het eind van de dag is het werk gedaan of het valt weg.",
     "how.tasks.p2": "De teler opent de app, ziet wat er klaarstaat (bijvoorbeeld <b>6 van 9 stengels</b>) en loopt de kas door om te scannen. De voortgang wordt weergegeven als <b>dekking</b>: hoeveel stengels met openstaand werk daadwerkelijk zijn bezocht.",
@@ -1390,6 +1392,7 @@ const I18N = {
     "nav.help": "Instellingen &amp; hulp",
     "nav.how": "Hoe het werkt",
     "nav.protocol": "Protocol",
+    "page.title": "Plantmetingen — Documentatie",
     "proto.cad.h": "Ritme",
     "proto.cad.li1": "<b>Twee sessies per week</b> is de standaard, meestal maandag en donderdag; sommige teelten doen er drie.",
     "proto.cad.li2": "Taken worden per meetdag aangemaakt.",
@@ -1445,11 +1448,11 @@ const I18N = {
     "app.f2.appHome.alt": "Écran d'accueil Source avec une salutation et une carte Mesures de plantes indiquant 3 tiges restantes sur 1 allée.",
     "app.f2.appHome.h": "Accueil Source",
     "app.f2.appHome.n": "Commencez ici",
-    "app.f2.appHome.p": "La salutation du jour, puis une carte <b>Mesures de plantes</b> : combien de tiges restent, les pastilles de tâches par type, et sur combien d'allées elles se répartissent. Touchez la carte pour entrer dans CAS. Ask Source se trouve en bas pour les questions sur la culture.",
-    "app.f2.casHome.alt": "Accueil CAS affichant 6 tiges sur 9, la couverture, et des cartes pour l'allée 1 et l'allée 2.",
+    "app.f2.appHome.p": "La salutation du jour, puis une carte <b>Mesures de plantes</b> : combien de tiges restent, les pastilles de tâches par type, et sur combien d'allées elles se répartissent. Touchez la carte pour entrer dans Plant Measurements. Ask Source se trouve en bas pour les questions sur la culture.",
+    "app.f2.casHome.alt": "Accueil Plant Measurements affichant 6 tiges sur 9, la couverture, et des cartes pour l'allée 1 et l'allée 2.",
     "app.f2.casHome.h": "Allées",
-    "app.f2.casHome.p": "Dans CAS : le compteur principal (6 / 9 tiges) et la couverture, puis une carte par allée avec les pastilles de ses tâches en attente. Les allées terminées descendent sous Terminé.",
-    "app.f2.desc": "L'application s'ouvre sur votre accueil Source ; toucher la carte Mesures de plantes vous fait entrer dans CAS. À partir de là, on zoome : les allées, puis une allée, puis une tige. Le bouton de scan est toujours à portée d'un geste, et scanner un QR ouvre la bonne tâche depuis n'importe où.",
+    "app.f2.casHome.p": "Dans Plant Measurements : le compteur principal (6 / 9 tiges) et la couverture, puis une carte par allée avec les pastilles de ses tâches en attente. Les allées terminées descendent sous Terminé.",
+    "app.f2.desc": "L'application s'ouvre sur votre accueil Source ; toucher la carte Mesures de plantes vous fait entrer dans Plant Measurements. À partir de là, on zoome : les allées, puis une allée, puis une tige. Le bouton de scan est toujours à portée d'un geste, et scanner un QR ouvre la bonne tâche depuis n'importe où.",
     "app.f2.h": "Naviguer",
     "app.f2.path.alt": "Écran d'allée listant toutes les tiges de l'allée.",
     "app.f2.path.h": "Écran d'allée",
@@ -1547,10 +1550,10 @@ const I18N = {
     "app.tab5": "Compter la grappe en nouaison",
     "app.tab6": "Compter la grappe en coloration",
     "app.tab7": "Après la session",
-    "footer.tagline": "Documentation utilisateur du Crop Assessment System",
+    "footer.tagline": "Documentation utilisateur de Plant Measurements",
     "footer.updated": "Dernière mise à jour",
     "gloss.facts.h": "L'essentiel",
-    "gloss.facts.li1": "<b>CAS, c'est le Crop Assessment System</b>, la partie mesure de l'application Source.",
+    "gloss.facts.li1": "<b>Plant Measurements</b> est la partie mesure de l'application Source.",
     "gloss.facts.li2": "L'application fonctionne <b>hors ligne d'abord</b> : les saisies sont stockées sur l'appareil et se synchronisent en arrière-plan.",
     "gloss.facts.li3": "<b>Un code QR correspond à une grappe</b>, pour un cycle de vie d'environ huit semaines. Les tiges de mesure portent également leur propre QR.",
     "gloss.facts.li4": "<b>La tâche découle du scan</b> : le QR scanné détermine l'étape qui s'ouvre. Les producteurs ne choisissent jamais un type de tâche.",
@@ -1578,15 +1581,15 @@ const I18N = {
     "gloss.t14.k": "Problèmes de qualité",
     "gloss.t14.v": "Ce qui cloche visiblement sur une grappe : fruits mal noués, nécrose apicale, fruits éclatés, ou autre chose.",
     "gloss.t15.k": "Couverture",
-    "gloss.t15.v": "La part du travail attendu d'une session qui a été effectuée ; l'indicateur de réussite de CAS.",
+    "gloss.t15.v": "La part du travail attendu d'une session qui a été effectuée ; l'indicateur de réussite de Plant Measurements.",
     "gloss.t16.k": "Session",
     "gloss.t16.v": "Le travail d'une journée de mesure, qui se clôt par le récapitulatif de session.",
     "gloss.t17.k": "Taux de nouaison",
-    "gloss.t17.v": "Combien de nouveaux fruits nouent par unité de temps ; le chiffre central que CAS transmet à la Prévision des récoltes.",
+    "gloss.t17.v": "Combien de nouveaux fruits nouent par unité de temps ; le chiffre central que Plant Measurements transmet à la Prévision des récoltes.",
     "gloss.t18.k": "Repos",
     "gloss.t18.v": "La période d'environ trois semaines entre la nouaison complète et la coloration, pendant laquelle une grappe ne génère aucune tâche.",
     "gloss.t19.k": "Prévision des récoltes",
-    "gloss.t19.v": "La prévision de Source sur les volumes de récolte et leur calendrier ; le principal consommateur des données CAS.",
+    "gloss.t19.v": "La prévision de Source sur les volumes de récolte et leur calendrier ; le principal consommateur des données Plant Measurements.",
     "gloss.t2.k": "Allée",
     "gloss.t2.v": "Le passage de circulation entre deux rangs de plantes, et l'unité de navigation principale.",
     "gloss.t4.k": "Tige",
@@ -1598,7 +1601,7 @@ const I18N = {
     "gloss.t7.k": "Grappe",
     "gloss.t7.v": "Un bouquet de fruits sur une tige : l'unité qu'un QR étiquette et que décrit chaque observation.",
     "gloss.t8.k": "Tige de mesure",
-    "gloss.t8.v": "Une tige enregistrée dans CAS au sein de l'échantillon d'au moins 40.",
+    "gloss.t8.v": "Une tige enregistrée dans Plant Measurements au sein de l'échantillon d'au moins 40.",
     "gloss.t9.k": "Scan en chaîne",
     "gloss.t9.v": "Déterminer la tige d'une nouvelle grappe en scannant un QR déjà présent sur cette tige.",
     "gloss.terms.h": "Termes",
@@ -1617,7 +1620,7 @@ const I18N = {
     "help.correct.li2": "<b>Mauvais comptage enregistré</b> — contactez votre conseiller de culture ou le support Source. Ils peuvent soumettre une correction qui remplace l'observation précédente.",
     "help.correct.li3": "<b>Grappe reliée à la mauvaise tige</b> — signalez l'erreur à votre conseiller de culture. Le lien peut être corrigé par le support, mais plus tôt l'erreur est détectée, mieux c'est.",
     "help.correct.note": "Chaque observation que vous faites est conservée dans l'historique des événements, y compris les corrections. Rien n'est perdu, même lorsqu'une valeur est corrigée ultérieurement.",
-    "help.correct.p1": "Les observations dans CAS sont enregistrées au moment où elles se produisent. <b>Il n'est pas possible de modifier directement une observation précédente depuis l'application.</b> Les chiffres saisis sont soumis lors de l'enregistrement, et les modifications des sessions passées nécessitent l'assistance du support.",
+    "help.correct.p1": "Les observations dans Plant Measurements sont enregistrées au moment où elles se produisent. <b>Il n'est pas possible de modifier directement une observation précédente depuis l'application.</b> Les chiffres saisis sont soumis lors de l'enregistrement, et les modifications des sessions passées nécessitent l'assistance du support.",
     "help.correct.p2": "<b>Avant d'enregistrer</b>, vérifiez soigneusement vos comptages. Les totaux cumulés et les indicateurs de changement sur les écrans de comptage sont là pour vous aider à repérer les entrées invraisemblables.",
     "help.h2": "Réglages et aide",
     "help.intro": "Tout n'est pas mesure dans l'application. L'onglet Paramètres réunit la configuration de l'application elle-même et un rappel sur le fonctionnement des mesures ; sur l'accueil, Ask Source prend les questions sur la culture.",
@@ -1645,9 +1648,9 @@ const I18N = {
     "hero.chip1": "<b>Règle directrice</b> — effectuez chaque tâche générée par l'application",
     "hero.chip2": "<b>Hors ligne d'abord</b> — une mesure n'attend jamais le réseau",
     "hero.chip3": "<b>Un QR</b> = une grappe = un cycle de vie",
-    "hero.eyebrow": "Crop Assessment System",
+    "hero.eyebrow": "Plant Measurements",
     "hero.h1": "De petites observations.<br>Une image complète de la culture.",
-    "hero.lead": "CAS transforme des observations courtes et ciblées sur un échantillon de plantes de mesure en une image de toute la serre : comment la culture noue, mûrit et produit. Chaque donnée est enregistrée avec le moment où elle a été constatée.",
+    "hero.lead": "Plant Measurements transforme des observations courtes et ciblées sur un échantillon de plantes de mesure en une image de toute la serre : comment la culture noue, mûrit et produit. Chaque donnée est enregistrée avec le moment où elle a été constatée.",
     "how.data.formula": "métrique estimée = taux observé × volume de la population",
     "how.data.h": "Où vont les données",
     "how.data.p1": "Chaque observation, qu'il s'agisse d'un comptage, d'une photo ou d'un événement du cycle de vie, alimente les modèles de prévision de Source, au premier rang desquels la <b>Prévision des récoltes</b>. Des observations bien réparties et correctement attribuées sont ce qui permet à un échantillon de tiges de représenter toute la serre :",
@@ -1663,7 +1666,7 @@ const I18N = {
     "how.gh.l5.n": "Grappe",
     "how.gh.p1": "Une serre high-tech est organisée dans l'espace. Le producteur raisonne en lieux (<i>« je suis sur l'allée 250 »</i>), et l'application reprend cette logique de navigation au lieu de présenter une liste plate de travaux.",
     "how.gh.p2": "Un <b>code QR est fixé à chaque grappe</b> dès son apparition, et l'accompagne toute sa vie, de la première nouaison jusqu'à la récolte. C'est en scannant ce QR que l'application sait quelle grappe vous avez devant vous, et quelle étape vient ensuite.",
-    "how.h2": "Comment fonctionne CAS",
+    "how.h2": "Comment fonctionne Plant Measurements",
     "how.id.h": "Comment une grappe retrouve sa tige",
     "how.id.li1": "<b>Le scan en chaîne, presque toujours.</b> Lors de l'enregistrement d'une nouvelle grappe, le producteur scanne un QR déjà présent sur la même tige. Scanner la grappe la plus proche juste en dessous de la nouvelle évite de la relier par erreur à une plante voisine.",
     "how.id.li2": "<b>Le QR propre à la tige, pour un démarrage à froid.</b> Chaque tige de mesure porte un QR. Lorsqu'il n'y a aucun QR de grappe sur lequel enchaîner (une nouvelle tige, une pousse latérale fraîchement conservée, un début de saison), c'est celui-là que l'on scanne.",
@@ -1709,7 +1712,7 @@ const I18N = {
     "how.reg.side.s2": "<b>Associer la tige principale</b> — scannez le QR de la tige principale, ou de n'importe quelle grappe qui y pend déjà, pour relier les deux.",
     "how.reg.side.s3": "<b>Définir l'emplacement</b> — l'étiquette découle de la tige principale, si bien qu'une pousse latérale reste toujours reconnaissable comme lui appartenant.",
     "how.reg.when": "Les tiges sont enregistrées en début de saison, chaque fois que le système demande des plantes de mesure supplémentaires, et durant les semaines où des pousses latérales sont conservées pour augmenter la densité de plantation.",
-    "how.reg.why": "Tout ce que CAS rapporte sur une serre est estimé à partir d'un échantillon de tiges de mesure. Les enregistrer correctement, bien réparties et bien situées, est le socle de tous les chiffres qui suivent.",
+    "how.reg.why": "Tout ce que Plant Measurements rapporte sur une serre est estimé à partir d'un échantillon de tiges de mesure. Les enregistrer correctement, bien réparties et bien situées, est le socle de tous les chiffres qui suivent.",
     "how.tasks.h": "Tâches et sessions",
     "how.tasks.p1": "Les tâches sont générées par culture. Combien s'en présentent un jour donné dépend de la culture, de son rythme, et de ce que fait la culture. À la fin de la journée, le travail est soit fait, soit il disparaît.",
     "how.tasks.p2": "Le producteur ouvre l'application, voit ce qui l'attend (<b>6 tiges sur 9</b>, par exemple), puis parcourt la serre et scanne. La progression est affichée sous forme de <b>couverture</b> : combien de tiges avec du travail en attente ont réellement été visitées.",
@@ -1719,6 +1722,7 @@ const I18N = {
     "nav.help": "Réglages &amp; aide",
     "nav.how": "Comment ça marche",
     "nav.protocol": "Protocole",
+    "page.title": "Plant Measurements — Documentation",
     "proto.cad.h": "Rythme",
     "proto.cad.li1": "<b>Deux sessions par semaine</b> par défaut, en général le lundi et le jeudi ; certaines cultures en font trois.",
     "proto.cad.li2": "Les tâches sont générées par jour de mesure.",
